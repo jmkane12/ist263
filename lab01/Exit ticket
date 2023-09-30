@@ -2,22 +2,23 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Heading of Scholarship Form</title>
+        <title>Scholarship Form</title>
         <style>
             td, th {border: 1px solid black;}
         </style>
     </head>
     <body>
         <h1>Scholarship Form</h1>
+        <h2>Table</h2>
         <table>
-            <caption>Scholarships</caption>
+            <caption>Scholarships Available</caption>
             <tr>
-                <th>Name of Scholarship</th>
+                <th>Name of Scholarhsip</th>
                 <th>Amount</th>
                 <th>Award Date</th>
             </tr>
             <tr>
-                <td>Memorial</td> 
+                <td>Memorial</td>
                 <td>$10,000</td>
                 <td>5/1/2024</td>
             </tr>
@@ -27,17 +28,12 @@
                 <td>3/1/2024</td>
             </tr>
         </table>
-        <h2>Form</h2>
+        <h2>Forms</h2>
         <form action="" method="post">
-            <label for="fullname">Full name:</label>
+            <label for="fullname">Full Name:</label>
             <input type="text" id="fullname" name="Full Name"><br>
-            <p>Below Select Grade:</p>
-            <input type="radio" id="sophomore" name="grade" value="sophomore">
-            <label for="sophomore">sophomore</label><br>
-            <input type="radio" id="junior" name="grade" value="junior" checked="yes"> 
-            <label for="junior">delivery</label><br>
-            <input type="radio" id="senior" name="grade" value="senior" checked="yes"> 
-            <label for="senior">delivery</label><br>
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade" name="Grade"><br>
             <input type="submit" value="send form">
         </form>
     </body>

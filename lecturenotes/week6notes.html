@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 Notes</title>
+    <style>
+        /* selector, property and value*/
+        h2 {font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif}
+        /* you can't use any font you want!*/
+        h1, p, h2 {font-size: 3em;}
+        /* You can use units em or % don't use px or pts */
+        p {
+            font-weight: bolder;
+            color:rgb(198, 61, 196);
+            text-decoration: underline;
+        }
+        /* below is a descendant selector - selects tag inside another tag */
+        p a{color:green;}
+        /* id selector picks one uniqe thing */
+        #secondid {color:indigo;}
+        /*this selects anything witha class that has the selector value */
+        .yellow {color:yellow;}
+    </style>
+</head>
+<body>
+    <h1 class="yellow">CSS</h1>
+    <a href="http://www.amazon.com" class="yellow">Amazon</a>
+    <h2 class="yellow">Change Font</h2>
+    <p><a href="http://www.ebay.com">Ebay</a>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus atque eum architecto minima perspiciatis repellat quia, dolores commodi magnam ut similique assumenda omnis reprehenderit ratione excepturi numquam dolorem quisquam neque.</p>
+    <h2>Size</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ullam, cupiditate ipsam, debitis et nisi quis nobis voluptates neque repellendus iure. Laboriosam rerum quae odit. Ut perferendis quos debitis blanditiis?</p>
+    <h2 id="secondid">Weight</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In sed eum qui sint nobis commodi facere voluptate voluptatibus soluta consectetur fugit, reiciendis laudantium eius delectus magnam eveniet tempore. Quam, possimus!</p>
+</body>
+</html>

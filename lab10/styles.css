@@ -23,3 +23,6 @@ a {color: #0a6f91;}
 .div3 {margin-left: 20px}
 .linkedin-section {margin-top: 70px; margin-right: 720px;}
 .email {margin-bottom: 65px;margin-top: 15px;}
+.quote {float: right;}
+.size {max-width: 100%;}
+.row2 {flex-wrap: wrap;}

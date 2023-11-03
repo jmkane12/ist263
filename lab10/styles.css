@@ -1,4 +1,4 @@
-nav {background-color: #FFF2D8; border-radius: .5em; padding: 10px; margin-bottom: 30px; flex-wrap: wrap;}
+nav {background-color: #FFF2D8; border-radius: .5em; padding: 10px; margin-bottom: 30px;}
 nav a {color: #0a6f91;}
 nav a:hover {background-color: #BCA37F;}
 body {font-family: 'Times New Roman', serif; background-color: #EAD7BB;}
@@ -10,17 +10,12 @@ p {color:#113946;}
 .size {max-width: 100%;}
 
 /*Adds media query for tablet and smaller viewport */
-@media screen and (max-width: 100%){
-        
-        nav {
-                display: block;
-                text-align: center;
-        }
+@media screen and (max-width: 600px){
         
         nav a {
                 display: block;
                 margin: 10px 0;
-                width: 100%;
+                display: 100%;
         }
 
         nav span {

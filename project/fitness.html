@@ -1,88 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>fitness</title>
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fitness</title>
+    <link rel="stylesheet" href="../project/pstyles.css">
+    <style>
+        body {
+            margin: 0; /* Removes default body margin */
+        }
+
+        .div1 {
+            background-color: #202e44;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px; /* Adds padding for better spacing */
+        }
+
+        h1 {
+            margin: 0; /* Remove margin for h1 to prevent extra space */
+            text-align: center;
+            font-size: 3.5em;
+            color: #a9bbc8;
+        }
+
+        nav {
+            text-align: center; /* Center the navigation links */
+        }
+
+        .links a {
+            margin-right: 10px; /* Adjust the spacing between the navigation links */
+            color: white; 
+            text-decoration: none; /* Removes underline */
+        }
+
+        .links a.firsth {
+            margin-left: 0; /* Remove the margin for the first link */
+        }
+
+        h2 {
+            margin-top: 20px; /* Add some top margin to the h2 elements for spacing */
+            text-align: center;
+            margin-bottom: -10px;
+            font-size: 2.5em; 
+            color: #202e44;
+        }
+
+        p {
+            color: #202e44;
+        }
+
+        .div2 {
+            padding-left: 179px;
+            padding-right: 158px;
+        }
+
+        .example {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .div4 {
+            display: flex;
+            justify-content: space-around; /* Align items with equal space around them */
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+            padding-left: 140px;
+            padding-right: 90px;
+        }
+
+        h3 {
+            font-size: 1.55em;
+            margin-bottom: -10px;
+        }
+
+        .workout-category {
+            flex-basis: 45%; /* Adjusts the width of each category */
+            margin-bottom: 20px; /* Adds margin between categories */
+        }
+
+        /* Media query for smaller screens */
+        @media only screen and (max-width: 768px) {
+            .div2 {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .div4 {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .workout-category {
+                flex-basis: 100%; /* Make each category take up the full width on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
         <h1>FitHealth</h1>
-        <nav>
-            <a href="../project/home.html">Home |</a>
-            <a href="../project/fitness.html">Fitness |</a>
-            <a href="../project/meals.html">Meal Prep</a>
-        </nav>
+        <div class="links">
+            <nav>
+                <a href="../project/home.html" class="firsth">Home |</a>
+                <a href="../project/fitness.html">Fitness |</a>
+                <a href="../project/meals.html">Meal Prep</a>
+            </nav>
+        </div>
+    </div>
+    <div class="div2">
         <h2>Fitness</h2>
         <p>
             Welcome to FitHealth, where we've designed a variety of workout routines to target various muscle groups and help you achieve your fitness goals. Whether you're a beginner looking to get started on your fitness journey or an athlete searching for inspiration, our collection of workouts caters to all levels. From strength training to cardiovascular exercises, you'll find routines designed to build strength in every major muscle group.
         </p>
+    </div>
+    <div class="div3">
         <h2>Workout Exercises</h2>
-            <p>
+        <div class="example">
                 (Choose one workout from each bullet)
-            </p>
-            <p>
-                Chest: <br>
-                <img src="../images/chest.jpg" alt="chest" height="250" width="375">
-                <br>•Incline Dumbbell Press, Incline Chest Press Machine, Incline Smith Machine Chest Press 
-                <br>•Flat Bench Press, Chest Press Machine, Dumbbell Chest Press
-                <br>•Cable (high to low) chest press, Chest dips
-            </p>
-            <p>
-                Triceps: <br>
-                <img src="../images/triceps.jpg" alt="triceps" height="250" width="375">
-                <br>•One arm cross-body cable extension 
-                <br>•Cable overhead extension
-                <br>•Bodyweight dips
-            </p>
-            <p>
-                Back: <br>
-                <img src="../images/back.jpg" alt="back" height="250" width="180">
-                <br>•Smith Machine Barbell Row 
-                <br>•Chest Supported T-Bar Row
-                <br>•Seated Cable Row
-                <br>•Medium Grip Lat Pulldown
-            </p>
-            <p>
-                Biceps: <br>
-                <img src="../images/biceps.jpg" alt="biceps" height="250" width="180">
-                <br>•Standing dumbbell curls, sitting dumbbell curls
-                <br>•Cable Hammer curls, Dumbbell hammer curls
-                <br>•Preacher Curls
-            </p>
-            <p>
-                Shoulders: <br>
-                <img src="../images/shoulders.jpg" alt="shoulders" height="250" width="180">
-                <br>•Dumbbell Shoulder Press
-                <br>•Seated dumbbell front raise, Cable front raise
-                <br>•Side cable lateral raise
-                <br>•Rear pec deck fly machine
-                <br>•Shoulder shrugs
-            </p>
-            <p>
-                Legs: <br>
-                <img src="../images/legs.jpg" alt="legs" height="250" width="375">
-                <br>•Barbell Back Squat
-                <br>•Leg Press
-                <br>•Leg Curl
-                <br>•Leg Extension
-                <br>•Calf Raise
-            </p>
-            <p>
-                Abs: <br>
-                <img src="../images/abs.jpg" alt="abs" height="250" width="375">
-                <br>•Russian Twists
-                <br>•Knee-To-Chests
-                <br>•Bicycle Kicks
-                <br>•Plank
-                <br>•Crunches
-            </p>
-            <p>
-                Cardio Exercises: <br>
-                <img src="../images/cardio.jpg" alt="cardio" height="250" width="180">
-                <br>•Jump Rope 
-                <br>•Biking in Place
-                <br>•Running in Place
-                <br>•Burpees
-            </p>
-    </body>
+        </div>
+    </div>
+    <div class="div4">
+        <div class="workout-category">
+            <h3>Chest:</h3> <br>
+            <img src="../images/chest.jpg" alt="chest" height="300" width="475">
+            <br>•Incline Dumbbell Chest Press, Incline Chest Press Machine, Incline Smith 
+            <br> Machine Chest Press 
+            <br>•Flat Bench Press, Chest Press Machine, Dumbbell Chest Press
+            <br>•Cable (high to low) Chest Press, Chest Dips
+        </div>
+    
+        <div class="workout-category">
+            <h3>Triceps:</h3> <br>
+            <img src="../images/triceps.jpg" alt="triceps" height="300" width="475">
+            <br>•One Arm Cross-Body Cable Extension 
+            <br>•Cable Overhead Extension
+            <br>•Bodyweight Dips
+        </div>
+
+        <div class="workout-category">
+            <h3>Back:</h3> <br>
+            <img src="../images/back.jpg" alt="back" height="400" width="300">
+            <br>•Smith Machine Barbell Row 
+            <br>•Chest Supported T-Bar Row
+            <br>•Seated Cable Row
+            <br>•Medium Grip Lat Pulldown
+        </div>
+
+        <div class="workout-category">
+            <h3>Biceps:</h3> <br>
+            <img src="../images/biceps.jpg" alt="biceps" height="400" width="300">
+            <br>•Standing Dumbbell Curls, Sitting Dumbbell Curls
+            <br>•Cable Hammer Curls, Dumbbell Hammer Curls
+            <br>•Preacher Curls
+        </div>
+
+        <div class="workout-category">
+            <h3>Shoulders:</h3> <br>
+            <img src="../images/shoulders.jpg" alt="shoulders" height="400" width="300">
+            <br>•Dumbbell Shoulder Press
+            <br>•Seated Dumbbell Front Raise, Cable Front Raise
+            <br>•Side Cable Lateral Raise
+            <br>•Rear Pec Deck Fly Machine
+            <br>•Shoulder Shrugs
+        </div>
+
+        <div class="workout-category">
+            <h3>Legs:</h3> <br>
+            <img src="../images/legs.jpg" alt="legs" height="300" width="475">
+            <br>•Barbell Back Squat
+            <br>•Leg Press
+            <br>•Leg Curl
+            <br>•Leg Extension
+            <br>•Calf Raise
+        </div>
+
+        <div class="workout-category">
+            <h3>Abs:</h3> <br>
+            <img src="../images/abs.jpg" alt="abs" height="300" width="475">
+            <br>•Russian Twists
+            <br>•Knee-To-Chests
+            <br>•Bicycle Kicks
+            <br>•Plank
+            <br>•Crunches
+        </div>
+
+        <div class="workout-category">
+            <h3>Cardio Exercises:</h3> <br>
+            <img src="../images/cardio.jpg" alt="cardio" height="400" width="300">
+            <br>•Jump Rope 
+            <br>•Biking in Place
+            <br>•Running in Place
+            <br>•Burpees
+        </div>    
+    </div>
+</body>
 </html>

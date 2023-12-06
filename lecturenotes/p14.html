@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito+Sans:opsz,wght@6..12,900&display=swap" rel="stylesheet">
     <style>
+        #heading {
+            font-family: 'Handlee', cursive;
+        }
         #modal-close {
             text-align: right;
             margin: 0px;
@@ -17,16 +23,13 @@
             top: 50%;
             left: 50%;
             margin: -100px -100px;
+            padding-top: 2px;
             display: none;
         }
         #container {
             position: relative;
             margin: 0 auto;
             width: 800px;
-        }
-        a {
-            background-color: #f2b9c5;
-            padding: 5px;
         }
     </style>
     <script>
@@ -40,19 +43,12 @@
 </head>
 <body>
     <div id="container">
-        <img src="https://jmkane12.github.io/ist263/images/cupcake.jpeg" alt="banner of a cupcake">
-        <h1>Dessert</h1>
-
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, optio alias. Quas cupiditate modi eligendi? Incidunt libero eligendi, enim amet magnam nemo accusantium possimus, vitae totam reprehenderit dicta quae commodi!</p>
-
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, optio alias. Quas cupiditate modi eligendi? Incidunt libero eligendi, enim amet magnam nemo accusantium possimus, vitae totam reprehenderit dicta quae commodi!</p>
-
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, optio alias. Quas cupiditate modi eligendi? Incidunt libero eligendi, enim amet magnam nemo accusantium possimus, vitae totam reprehenderit dicta quae commodi!</p>
         <p><a onclick="openModal();">Subscribe to our newsletter</a></p>
     </div>
     <div id="modal">
         <p id="modal-close" onclick="closeModal();">X</p>
         <form>
+            <label for="heading" id="heading">Join Subscription List</label><br>
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name"><br>
             <label for="email">Email:</label><br>

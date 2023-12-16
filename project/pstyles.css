@@ -1,5 +1,5 @@
 body {font-family: 'Lato', sans-serif;; background-color: #fdefdf;}
-h1 {font-size: 3.5em; color: #a9bbc8; margin-left: 42%;}
+h1 {font-size: 3.5em; color: #fdefdf; margin-left: 42%;}
 h2 {font-size: 2.5em; color: #202e44;}
 p {font-size: 1.14em}
 .div1 {       
@@ -12,7 +12,7 @@ h1 {
         margin: 0; /* Remove margin for h1 to prevent extra space */
         text-align: center;
         font-size: 3.5em;
-        color: #a9bbc8;
+        color: #fdefdf;
         font-family: 'Mina', sans-serif;
 }
 
@@ -62,8 +62,8 @@ body {
     }
 
 h1 {
-color: #a9bbc8;
-animation: logoAnimation 2s infinite; /* Apply the animation to the logo */
+        color: #fdefdf;
+        animation: logoAnimation 2s infinite; /* Apply the animation to the logo */
 }
 
 @media screen and (max-width: 600px){

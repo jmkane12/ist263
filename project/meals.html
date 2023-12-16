@@ -12,6 +12,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
     <style>
+        .skip {
+        background-color: #ffbf00;
+        padding: 5px;
+        border: #000000;
+        text-decoration: none;
+        position: absolute; /* positions an element relative to the top left of the viewport */
+        top: 10px;
+        left: -999px;  /* -999 pushes off the left side of the screen */
+        }
+
+        .skip:focus {
+                left: 10px; /*bring it back when its been tabbed to */
+        }
         .div1{
             background-color: #202e44;
         }

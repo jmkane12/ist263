@@ -3,57 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>meals</title>
+    <title>Meals</title>
     <link rel="stylesheet" href="../project/pstyles.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <style>
+        .div1{
+            background-color: #202e44;
+        }
+
+        h2 {
+            margin-top: 20px;
+            text-align: center;
+            margin-bottom: -10px;
+            font-size: 2.5em;
+            color: #202e44;  
+            font-family: 'Lato', sans-serif;      
+        }
+
+        p {
+            color: #202e44;
+        }
+
+        .div2 {
+            padding-left: 179px;
+            padding-right: 158px;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .div3 {
+            display: flex;
+            justify-content: space-around; /* Align items with equal space around them */
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+            padding-left: 140px;
+            padding-right: 90px;
+        }
+
+        .head {
+            margin-bottom: 30px;
+        }
+
+        .example {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .div4 {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding-left: 140px;
+            padding-right: 90px;
+        }
+
+        h3 {
+            font-size: 1.55em;
+            margin-bottom: -10px;
+        }
+
+        .bulking {
+            flex-basis: 30%;
+            margin-bottom: 20px;
+            color: #202e44;
+        }
+
+        .cutting {
+            flex-basis: 30%;
+            margin-bottom: 20px;
+            color: #202e44;
+        }
+
+
+        @media only screen and (max-width: 768px) {
+            .div2 {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .div4 {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .bulking {
+                flex-basis: 100%;
+            }
+
+            .cutting {
+                flex-basis: 100%;
+            }
+
+            img {
+                width: 100%; /* Make images take up the full width of their container */
+                height: auto;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>FitHealth</h1>
-    <nav>
-        <a href="../project/home.html">Home |</a>
-        <a href="../project/fitness.html">Fitness |</a>
-        <a href="../project/meals.html">Meal Prep</a>
-    </nav>
-    <h2>Meal Prep</h2>
-    <p>Our meal prep page recomends a diverse selection of foods carefully selected to support your bulking and cutting weight objectives. Whether you're looking to build muscle or shed unwanted pounds, these meal recommendations are set to fuel your body with the right nutrients to reach your peak performance. Explore a wide range of delicious and nutritious options to help you maintain a balanced diet and make the most out of your fitness journey.</p>
-    <p>Link to website that can track how many calories you eat in a day and tell you how many calories you need to eat to gain or lose weight:<br><a href="https://www.myfitnesspal.com/">My Fitness Pal </a></p>
-    <h2>Bulking</h2>
-    <img src="../images/groundbeef.jpg" alt="beef" height="250" width="375">
-    <p>80/20 Ground Beef - 4 ounces, 290 calories</p>
-    <img src="../images/eggs.jpg" alt="eggs" height="250" width="180">
-    <p>Eggs - 1 egg, 72 calories</p>
-    <img src="../images/chicken.jpg" alt="chicken" height="250" width="180">
-    <p>Chicken - 1 ounce, 220 calories</p>
-    <img src="../images/almonds.jpg" alt="almonds" height="250" width="215">
-    <p>Almonds - 1 ounce, 164 calories</p>
-    <img src="../images/yogurt.jpg" alt="yogurt" height="250" width="190">
-    <p>Yogurt - 1 cup, 238 calories</p>
-    <img src="../images/avocado.jpg" alt="avocado" height="250" width="375">
-    <p>Avocado - 1 medium, 240 calories</p>
-    <img src="../images/driedfruit.jpg" alt="driedfruit" height="250" width="375">
-    <p>Dried Fruit - 0.25 cup, 100 calories</p>
-    <img src="../images/oats.jpg" alt="oats" height="250" width="375">
-    <p>Oats - 1 cup, 146 calories</p>
-    <img src="../images/granola.jpg" alt="granola" height="250" width="180">
-    <p>Granola - 0.25 cup, 117 calories</p>
-    <img src="../images/pasta.jpg" alt="pasta" height="250" width="180">
-    <p>Pasta - 1 cup, 280 calories</p>
-    <h2>Cutting</h2>
-    <img src="../images/water.jpg" alt="water" height="250" width="375">
-    <p>Water - 0 calories</p>
-    <img src="../images/watermelon.jpg" alt="watermelon" height="250" width="375">
-    <p>Watermelon - 1 cup, 23 calories</p>
-    <img src="../images/greentea.jpg" alt="greentea" height="250" width="375">
-    <p>Green Tea - 0 calories</p>
-    <img src="../images/brown rice.jpg" alt="brownrice" height="250" width="180">
-    <p>Brown Rice - 1 cup, 150 calories</p>
-    <img src="../images/wholeeggs.jpg" alt="wholeeggs" height="250" width="375">
-    <p>Whole Eggs - 1 egg, 35 calories</p>
-    <img src="../images/leafygreens.jpg" alt="leafygreens" height="250" width="375">
-    <p>Leafy greens - 1 cup, 5 calories</p>
-    <img src="../images/cottagecheese.jpg" alt="cottagecheese" height="250" width="355">
-    <p>Cottage Cheese - 1 cup, 149 calories</p>
-    <img src="../images/sweetpotato.jpg" alt="sweetpotatos" height="250" width="375">
-    <p>Sweet Potatoes - 1 medium, 164 calories</p>
+    <div class="div1">
+            <h1>FitHealth</h1>
+        <div class="links">
+            <nav>
+                <a href="#main" tabindex="1" class="skip">Skip to Content</a><br>
+                <a href="../project/home.html" tabindex="2">Home |</a>
+                <a href="../project/fitness.html" tabindex="3">Fitness |</a>
+                <a href="../project/meals.html" tabindex="4">Meal Prep</a>
+            </nav>
+        </div>
+    </div>
+    <div class="div2">
+        <h2>Meal Prep</h2>
+            <p>Our meal prep page recommends a diverse selection of foods carefully selected to support your bulking and cutting weight objectives. Whether you're looking to build muscle or shed unwanted pounds, these meal recommendations are set to fuel your body with the right nutrients to reach your peak performance. Explore a wide range of delicious and nutritious options to help you maintain a balanced diet and make the most out of your fitness journey.</p>
+            <p>Link to website that can track how many calories you eat in a day and tell you how many calories you need to eat to gain or lose weight: <a href="https://www.myfitnesspal.com/" tabindex="5">My Fitness Pal </a></p>
+        <div class="head">
+            <h2>Bulking</h2>
+        </div>
+            <div class="div3">
+                <div class="bulking">
+                    <img src="../images/almonds.jpg" alt="almonds" height="250" width="215">
+                    <p>Almonds - 1 ounce, 164 calories</p>
+                </div>
+                <div class="bulking">
+                    <img src="../images/eggs.jpg" alt="eggs" height="250" width="180">
+                    <p>Eggs - 1 egg, 72 calories</p>
+                </div>
+                <div class="bulking">
+                    <img src="../images/chicken.jpg" alt="chicken" height="250" width="180">
+                    <p>Chicken - 1 ounce, 220 calories</p>
+                </div>
+                <div class="bulking">
+                    <img src="../images/yogurt.jpg" alt="yogurt" height="250" width="190">
+                    <p>Yogurt - 1 cup, 238 calories</p>
+                </div>
+                <div class="bulking">
+                    <img src="../images/granola.jpg" alt="granola" height="250" width="180">
+                    <p>Granola - 0.25 cup, 117 calories</p>
+                </div>
+                <div class="bulking">
+                    <img src="../images/pasta.jpg" alt="pasta" height="250" width="180">
+                    <p>Pasta - 1 cup, 280 calories</p>
+                </div>
+                <div class="bulking">
+                    <img src="../images/avocado.jpg" alt="avocado" height="250" width="375">
+                    <p>Avocado - 1 medium, 240 calories</p>
+                </div>
+                <div class="bulking">
+                    <img src="../images/groundbeef.jpg" alt="beef" height="250" width="375">
+                    <p>80/20 Ground Beef - 4 ounces, 290 calories</p>
+                </div>
+                <div class="bulking">
+                    <img src="../images/driedfruit.jpg" alt="driedfruit" height="250" width="375">
+                    <p>Dried Fruit - 0.25 cup, 100 calories</p>
+                </div>  
+                <div class="bulking">
+                    <img src="../images/oats.jpg" alt="oats" height="250" width="375">
+                    <p>Oats - 1 cup, 146 calories</p>
+                </div>
+            </div>
+        <div class="head">
+            <h2>Cutting</h2>
+        </div>
+            <div class="div4">
+                <div class="cutting">
+                    <img src="../images/water.jpg" alt="water" height="250" width="375">
+                    <p>Water - 0 calories</p>
+                </div>
+                <div class="cutting">
+                    <img src="../images/watermelon.jpg" alt="watermelon" height="250" width="375">
+                    <p>Watermelon - 1 cup, 23 calories</p>
+                </div>
+                <div class="cutting">
+                    <img src="../images/greentea.jpg" alt="greentea" height="250" width="375">
+                    <p>Green Tea - 0 calories</p>
+                </div>
+                <div class="cutting">
+                    <img src="../images/wholeeggs.jpg" alt="wholeeggs" height="250" width="375">
+                    <p>Whole Eggs - 1 egg, 35 calories</p>
+                </div>
+                <div class="cutting">
+                    <img src="../images/leafygreens.jpg" alt="leafygreens" height="250" width="375">
+                    <p>Leafy greens - 1 cup, 5 calories</p>
+                </div>
+                <div class="cutting">
+                    <img src="../images/cottagecheese.jpg" alt="cottagecheese" height="250" width="355">
+                    <p>Cottage Cheese - 1 cup, 149 calories</p>
+                </div>
+                <div class="cutting">
+                    <img src="../images/sweetpotato.jpg" alt="sweetpotatos" height="250" width="375">
+                    <p>Sweet Potatoes - 1 medium, 164 calories</p>
+                </div>
+                <div class="cutting">
+                    <img src="../images/brown rice.jpg" alt="brownrice" height="250" width="180">
+                    <p>Brown Rice - 1 cup, 150 calories</p>
+                </div>
+            </div>
+    </div>
 </body>
+
 </html>

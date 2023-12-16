@@ -6,37 +6,13 @@
     <title>fitness</title>
     <link rel="stylesheet" href="../project/pstyles.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <style>
-        body {
-            margin: 0; /* Removes default body margin */
-        }
-
-        .div1 {
+        .div1{
             background-color: #202e44;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px; /* Adds padding for better spacing */
-        }
-
-        h1 {
-            margin: 0; /* Remove margin for h1 to prevent extra space */
-            text-align: center;
-            font-size: 3.5em;
-            color: #a9bbc8;
-        }
-
-        nav {
-            text-align: center; /* Center the navigation links */
-        }
-
-        .links a {
-            margin-right: 10px; /* Adjust the spacing between the navigation links */
-            color: #ffffff; 
-            text-decoration: none; /* Removes underline */
-        }
-
-        .links a.firsth {
-            margin-left: 0; /* Remove the margin for the first link */
         }
 
         h2 {
@@ -45,6 +21,7 @@
             margin-bottom: -10px;
             font-size: 2.5em; 
             color: #202e44;
+            font-family: 'Lato', sans-serif;
         }
 
         p {
@@ -54,11 +31,14 @@
         .div2 {
             padding-left: 179px;
             padding-right: 158px;
+            font-family: 'Lato', sans-serif;
         }
 
         .example {
             text-align: center;
             margin-top: 10px;
+            font-family: 'Lato', sans-serif;
+            font-size: 1.14em
         }
 
         .div4 {
@@ -67,16 +47,20 @@
             flex-wrap: wrap; /* Allow items to wrap to the next line */
             padding-left: 140px;
             padding-right: 90px;
+            font-size: 1.14em
         }
 
         h3 {
             font-size: 1.55em;
             margin-bottom: -10px;
+            font-family: 'Lato', sans-serif;
         }
 
         .workout-category {
             flex-basis: 45%; /* Adjusts the width of each category */
             margin-bottom: 20px; /* Adds margin between categories */
+            color: #202e44;
+            font-family: 'Lato', sans-serif;
         }
 
         /* Media query for smaller screens */
@@ -94,6 +78,11 @@
             .workout-category {
                 flex-basis: 100%; /* Make each category take up the full width on smaller screens */
             }
+
+            img {
+                width: 100%; /* Make images take up the full width of their container */
+                height: auto; /* Maintain the aspect ratio */
+            }
         }
     </style>
 </head>
@@ -102,9 +91,10 @@
         <h1>FitHealth</h1>
         <div class="links">
             <nav>
-                <a href="../project/home.html" class="firsth">Home |</a>
-                <a href="../project/fitness.html">Fitness |</a>
-                <a href="../project/meals.html">Meal Prep</a>
+                <a href="#main" tabindex="1" class="skip">Skip to Content</a><br>
+                <a href="../project/home.html" tabindex="2">Home |</a>
+                <a href="../project/fitness.html" tabindex="3">Fitness |</a>
+                <a href="../project/meals.html" tabindex="4">Meal Prep</a>
             </nav>
         </div>
     </div>

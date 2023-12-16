@@ -6,15 +6,13 @@
     <title>home</title>
     <link rel="stylesheet" href="../project/pstyles.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-
     <style>
         body {
+            margin: 0;
+            padding: 0;
             background: url('../images/workout2.jpg') no-repeat center center fixed;
             background-size: cover;
+            font-family: Arial, sans-serif;
         }
 
         .container {
@@ -25,8 +23,7 @@
 
         .div1 {
             text-align: center;
-            max-width: 475px;
-            margin: 0 auto;
+            background-color: #202e44;
         }
 
         h1 {
@@ -34,62 +31,46 @@
         }   
 
         .links {
-            margin-top: 5px;
+            margin-top: 20px;
         }
 
         nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0px;
+            margin: 0 10px;
         }
 
         .about, .benefits, .offer {
+            max-width: 500px;
             text-align: center;
             color: #fff; /* Set the text color to make it visible on the background */
             margin: 20px;
-            font-family: 'Lato', sans-serif;
         }
 
         .about {
-            float: none;
-            max-width: 500px;
-            margin-top: 1px;
+            margin-top: 70px;
         }
 
         .benefits {
-            max-width: 500px;
             float: right;
-            margin-top: -120px;
+            margin-top: -198px;
         }
 
-        .workouts{
-            float: left;
-            max-width: 500px;
-            margin: 50px;
-        }
-
-        .meals{
-            max-width: 500px;
-            float: right;
-            margin-top: 20px;
+        .offer {
+            margin-top: 400px; /* Adjust as needed */
+            justify-content: center;
         }
 
         h2 {
-            font-family: 'Lato', sans-serif;
-            color: #fff
-        }
-        .images img {
-            margin: 10px;
+            color: #fff;
         }
 
-        @media screen and (max-width: 1400px) {
-            .benefits {
-                float: none; /* Remove float on smaller screens */
-                margin-top: 10px;
-            }
-            .benefits, .workouts, .meals, .about {
-                margin: 0 auto;
-            }
+        p {
+            color: #fff;
+        }
+
+        .images img {
+            margin: 10px;
         }
     </style>
 </head>
@@ -99,10 +80,9 @@
             <h1>FitHealth</h1>
             <div class="links">
                 <nav>
-                    <a href="#main" tabindex="1" class="skip">Skip to Content</a><br>
-                    <a href="../project/home.html" tabindex="2">Home |</a>
-                    <a href="../project/fitness.html" tabindex="3">Fitness |</a>
-                    <a href="../project/meals.html" tabindex="4">Meal Prep</a>
+                    <a href="../project/home.html" class="firsth">Home |</a>
+                    <a href="../project/fitness.html">Fitness |</a>
+                    <a href="../project/meals.html">Meal Prep</a>
                 </nav>
             </div>
         </div>
@@ -119,18 +99,15 @@
             </p>
         </div>
         <div class="offer">
-            <div class="workouts">
-                <h2>Workout Ideas:</h2>
-                    <p>
-                        You may choose from an abundance of cardio exercises designed to boost your cardiovascular health. While also providing a wide range of workout ideas tailored to target specific muscle groups. Bulking or cutting, we provide effective exercises to help you redefine and strengthen your body.
-                    </p>
-            </div>
-            <div class="meals">
-                <h2>Nutrition and Meal Plans:</h2>
-                    <p>
-                        Venture into our meals section where you can encounter a variety of different foods along with their calorie count all tailored to whether you are bulking or cutting.
-                    </p>
-            </div>
+            <h2>What we Offer</h2>
+            <p>Cardio and Muscle Workout Ideas:</p>
+            <p>
+                You may choose from an abundance of cardio exercises designed to boost your cardiovascular health. While also providing a wide range of workout ideas tailored to target specific muscle groups. Bulking or cutting, we provide effective exercises to help you redefine and strengthen your body.
+            </p>
+            <p>Nutrition and Meal Plans:</p>
+            <p>
+                Venture into our meals section where you can encounter a variety of different foods along with their calorie count all tailored to whether you are bulking or cutting.
+            </p>
         </div>
     </div>
 </body>

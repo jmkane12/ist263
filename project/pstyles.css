@@ -48,6 +48,24 @@ body {
 .skip:focus {
         left: 10px; /*bring it back when its been tabbed to */
 }
+
+@keyframes logoAnimation {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+h1 {
+color: #a9bbc8;
+animation: logoAnimation 2s infinite; /* Apply the animation to the logo */
+}
+
 @media screen and (max-width: 600px){
         
     nav a {
